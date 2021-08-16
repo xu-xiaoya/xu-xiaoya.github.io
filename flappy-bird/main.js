@@ -16,7 +16,7 @@ game_state.main.prototype = {
         // 加载bird
         this.game.load.image('bird', 'assets/bird1.png');  
         // 加载pipe
-        this.game.load.image('pipe', 'assets/pipe.png');      
+        this.game.load.image('pipe', 'assets/pipe1.png');      
     },
 
     // 显示图像
