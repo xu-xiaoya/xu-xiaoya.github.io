@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>Diff: 可删减、有顺序的对象数组</title>
+      <link href="/2024/08/03/article7/"/>
+      <url>/2024/08/03/article7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>对象数组，<br>一个对象数组，字段有顺序，可以在任意行进行增删的场景在日常业务中非常常见。<br>其特点是：</p><ul><li>有序</li><li>可以在任何位置增删</li><li>key可能变，也可能不变<ul><li>强key(key不变)的场景例如：可以拖动顺序的文件目录，key是目录或者文件的id，可以任意修改名称或者拖动顺序。</li><li>弱key(key可变)的场景例如：在页面创建一张表，字段是key，但字段名称可以修改，字段本身有顺序，可以在任意位置进行增改</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目实战 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> react </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>antd实现table+form多层级字段的拖拽、新增和删除</title>
       <link href="/2024/06/29/article5/"/>
       <url>/2024/06/29/article5/</url>
