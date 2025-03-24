@@ -58,7 +58,7 @@
       <link href="/2024/08/03/article7/"/>
       <url>/2024/08/03/article7/</url>
       
-        <content type="html"><![CDATA[<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>对象数组，<br>一个对象数组，字段有顺序，可以在任意行进行增删的场景在日常业务中非常常见。<br>其特点是：</p><ul><li>有序</li><li>可以在任何位置增删</li><li>key可能变，也可能不变<ul><li>强key(key不变)的场景例如：可以拖动顺序的文件目录，key是目录或者文件的id，可以任意修改名称或者拖动顺序。</li><li>弱key(key可变)的场景例如：在页面创建一张表，字段是key，但字段名称可以修改，字段本身有顺序，可以在任意位置进行增改</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在日常业务中，我们可能需要对一个“对象数组”进行新旧版本的比较。</p><p>特点：</p><ul><li>字段有顺序</li><li>可任意增删</li><li>key不确定性</li></ul><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>核心：解决如何遍历对象数组？<br>这里将key分强key和弱key两种情况进行讨论：</p><h2 id="强key"><a href="#强key" class="headerlink" title="强key"></a>强key</h2><p>  强key，即赋给key的值不会变化。<br>  case:<br>    可任意拖拽&#x2F;修改名称的文件目录，<br>    key：目录&#x2F;文件id</p><h2 id="弱key"><a href="#弱key" class="headerlink" title="弱key"></a>弱key</h2><p>  弱key，即赋给key的值可能被修改，发生变化。<br>  case：<br>    创建一张数据表，可任意增删，每个字段的序号会根据拖拽重新生成。<br>    key：字段名称，但字段名称可以修改</p>]]></content>
       
       
       <categories>
